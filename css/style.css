@@ -1,0 +1,258 @@
+/* Same at any resolution */
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+html{
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
+    color: #ddd;
+    min-height: 100%;
+    min-height: 100%;
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(145, 9, 129, 0.22) 10%, rgba(32, 206, 125, 0) 40%), linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(38, 216, 97, 0.4) 100%), linear-gradient(135deg, #d52114 0%, #7b0b71 100%);
+}
+
+html body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    color: rgb(230, 187, 221);
+    text-align: center;
+    }
+p {
+    color: #ddd;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+#dropdown {
+    /* Size/Spacing */
+    margin: 1 auto;
+    text-align: center;
+}
+#dropdown-button {
+    /* Decorations */
+    background: rgb(59, 57, 57);
+    border: 1px solid rgb(59, 57, 57);
+    text-align: center;
+    outline: none;
+    color: rgb(165, 157, 157);
+}
+#dropdown-button:hover, #search-button:hover, #dropdown-menu:hover {
+    /* Decorations */
+    cursor: pointer;
+}
+#dropdown-menu {
+    text-align: left;
+    background: rgb(59, 57, 57);
+    padding: 2px;
+    border: 0.1px solid rgb(150, 144, 144);
+}
+ul {
+    padding: 0px;
+}
+li {
+    list-style: none;
+    display: block;
+}
+li:hover {
+    background: rgb(56, 55, 55);
+}
+li:nth-last-child(2) {
+    padding: 0px;
+    width: 100%;
+}
+.fa-angle-down, .fa-tv-retro, .fa-headphones, .fa-book, .fa-images, .fa-gamepad, .fa-file-archive {
+    float: right;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 5px;
+}
+#search-box {
+    /* Decorations */
+    background: #ddd;
+    text-align: right;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#search-button {
+    /* Decorations */    
+    background: rgb(59, 57, 57);
+    border: 1px solid rgb(59, 57, 57);
+    text-align: center;
+    outline: none;
+    color: rgb(253, 249, 249);
+}
+
+@media only screen and (min-width: 750px) {
+    h1 {font-size: 4rem;}
+    p {font-size: 2rem;}
+    
+    #search-bar {
+        width: 95%;
+        height: 40px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #dropdown {
+        width: 200px;
+        height: 42px;
+        display: inline-block;
+    }    
+    #dropdown-button {
+        /* Decorations */
+        border-radius: 10px 0 0 10px;
+        
+        /* Size/Spacing */
+        padding: 10px;
+        margin: 0;
+        width: 200px;
+        height: 42px;
+    }
+    #dropdown-menu {
+        margin-left: 14px;
+        margin-top: -1px;
+        display: none;
+        position: absolute;
+        border-radius: 0 0 10px 10px;
+        z-index: 1;
+    }
+    ul {
+        width: 185px;
+        margin: 0;
+    }
+    li {
+        padding: 10px;
+        width: 170px;
+    }
+    li:nth-last-child(1) {
+        border: none;
+        border-radius: 0 0 10px 10px;
+    }
+    #search-box {
+        /* Size/Spacing */
+        padding: 10px;
+        margin: -6px;
+        width: 60%;
+        height: 18px;
+        border: 2px solid rgb(59, 57, 57);
+    }
+    #search-button {
+        /* Decorations */    
+        border-radius: 0 10px 10px 0;
+
+        /* Size/Spacing */
+        padding: 10px;
+        margin: 0;
+        width: 40px;
+        height: 42px;
+        z-index: 1;
+    }
+}
+
+/* 750px wide or smaller */
+@media only screen and (max-width: 750px) { /*750 px or less */
+    h1 {font-size: 2.6rem;}
+    p {font-size: 1.6rem;}
+    
+    #search-bar {
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+    }
+    #dropdown {
+        width: 100%;
+    }
+    #dropdown-button {
+        /* Decorations */
+        border-radius: 10px 10px 0 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        
+        /* Size/Spacing */
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        height: 60px;
+    }
+    #dropdown-menu{
+        font-size: 1.3rem;
+        width: 98%;
+        margin: 0 auto;
+        box-shadow: 0px 0px 40px rgb(59, 57, 57);
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+    }
+    ul {
+        width: 100%;
+        margin: 5px 0;
+    }
+    li {
+        padding: 10px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    #search-box {
+        /* Size/Spacing */
+        padding: 5px;
+        margin: -1px 0;
+        width: 100%;
+        border: 1px solid rgb(59, 57, 57);
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+        height: 60px;
+    }
+    #search-button {
+        /* Decorations */    
+        border-radius: 0 0 10px 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        content: "Search";
+
+        /* Size/Spacing */
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        height: 60px;
+        z-index: 1;  
+    }
+    #donations {
+        width: auto;
+        height: 130px;
+        position: relative;
+        margin: 40px 20px;
+        line-height: 1rem;
+    }
+
+    .donate {
+        padding: .8rem;
+    }
+
+    .donate-pp {
+        position: absolute;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        bottom: 50px;
+    }
+
+    .donate-btc {
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        left: 0;
+        bottom: 0;
+    }
+
+    .fa-btc, .fa-paypal {
+        padding-bottom: 0;
+    }
+}
